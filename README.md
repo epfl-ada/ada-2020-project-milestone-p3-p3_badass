@@ -1,4 +1,4 @@
-**Milestone P3**
+# Milestone P3
 
 **Racial Disparities in the US**
 
