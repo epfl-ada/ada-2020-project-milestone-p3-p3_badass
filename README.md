@@ -46,7 +46,7 @@ The last week will be dedicated to proof-check what each one of us has completed
 
 
 ## Organization within the team
-- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Feten**
+- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Faten**
 - **Second question** (correlation between government spendings and killings per race): **Gerald**
 - **Third question** (finding interesting statistical insights on data related to police killings): **George**
 
