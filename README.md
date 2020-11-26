@@ -31,29 +31,30 @@ The Giffords is a non-profit advocacy and research organization focused on promo
 
 - [Original paper data](https://openpolicing.stanford.edu/data/)
 
-This is the dataset used by the original paper.
-
-It contains data about the different stops and information about the drivers. The data is available as separate csv files per many different counties, so we will need to merge them manually, and make sure that we deal with missing data.
+This is the dataset used by the original paper. It contains data about the different stops and information about the drivers. The data is available as separate csv files per many different counties, so we will need to merge them manually, and make sure that we deal with missing data.
 
 ##Methods
 
-- Data collection: Scraping gun laws data from the Giffords organization website.
-- Data preprocessing: Merging the gun laws dataset with the Police Violence one to use the state’s ranking as a feature.
+- **Data collection:** Scraping gun laws data from the Giffords organization website.
+- **Data preprocessing:** Merging the gun laws dataset with the Police Violence one to use the state’s ranking as a feature.
 
 ##Proposed timeline
-- 1st week: 
+- **1st week:** 
 We will each work individually on the new replication task.
-- 2nd week:
+- **2nd week:**
 We will split the workload evenly in the team so that each team member has one research question to work on (see section below). We are aiming that by the end of the second week, we will each have completed every question.
-- 3rd week:
+- **3rd week:**
 The last week will be dedicated to proof-check what each one of us has completed in the previous week, improve on that and merge our works in one place. After this is done, the remaining amount of time will be dedicated to creating the data story. 
 
 
 ##Organization within the team
-- First question (improving upon the study of the paper by including a normalization factor for the racial distribution per state): Feten
-- Second question (correlation between government spendings and killings per race): Gerald
-- Third question (finding interesting statistical insights on data related to police killings): George
+- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Feten**
+- **Second question** (correlation between government spendings and killings per race): **Gerald**
+- **Third question** (finding interesting statistical insights on data related to police killings): **George**
 
 ##Questions for TAs
 - We are thinking of including in our project a prediction model based on data related to racial disparity, but we are unsure on what to predict. If you have any idea or advice on this, we would appreciate it. 
 - Are the research questions we are currently presenting enough to serve as an interesting extinction to the study?
+
+
+
