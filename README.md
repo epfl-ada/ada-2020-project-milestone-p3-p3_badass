@@ -1,6 +1,5 @@
-# Milestone P3
-
-**Racial Disparities in the US**
+# Racial Disparities in the US
+***
 
 ## Abstract
 
