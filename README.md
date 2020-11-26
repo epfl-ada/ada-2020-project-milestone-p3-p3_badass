@@ -1,5 +1,6 @@
-# Racial Disparities in the US
+**Milestone 3**
 ***
+# Racial Disparities in the US
 
 ## Abstract
 
