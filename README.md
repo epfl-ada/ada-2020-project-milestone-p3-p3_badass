@@ -1,4 +1,3 @@
-George Epfl, [26 Nov 2020 at 12:38:31]:
 #<center>Milestone P3</center>
 
 #<center>*Racial Disparities in the US*</center>
