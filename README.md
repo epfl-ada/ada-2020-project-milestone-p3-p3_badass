@@ -1,4 +1,4 @@
-#<center>Milestone P3</center>
+# Milestone P3
 
 #<center>*Racial Disparities in the US*</center>
 
