@@ -1,6 +1,6 @@
-# Milestone P3
+**Milestone P3**
 
-<center> Racial Disparities in the US </center>
+**Racial Disparities in the US**
 
 ## Abstract
 
