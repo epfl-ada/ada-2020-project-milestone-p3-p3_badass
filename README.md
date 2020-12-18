@@ -5,18 +5,23 @@
 
 ## Abstract
 
-Racial inequalities and discrimination against minorities has been a prominent issue throughout US history but in recent years its importance has risen to unprecedented heights. Specifically, after the murders of George Floyd and Breonna Taylor, the discussion on if police acts more violently against minorities and especially black minorities, compared to white people has been on the forefront of American politics and that’s why we decided to take a data driven approach to this issue and the black lives matter movement. We intend on investigating whether the claims of the black community are supported by official statistics and if their demands will indeed have an impact and reduce police brutality. This is connected to the original paper on the basis of examining a different case of police racial bias against minorities and we aim to improve upon that paper’s research by normalizing all the results by the population race density.
+Racial inequalities and discrimination against minorities has been a prominent issue throughout US history but in recent years its importance has risen to unprecedented heights. Specifically, after the murder of George Floyd, the discussion on if police acts more violently against minorities and especially black minorities, compared to white people has been on the forefront of American politics and that’s why we decided to take a data driven approach to this issue and the black lives matter movement. We intend on investigating whether the claims of the black community are supported by official statistics, if their demands will indeed have an impact and reduce police brutality and what's the effect of protests on this problem and how we can quantify it. This is connected to the original paper on the basis of examining a different case of police racial bias against minorities and we aim to improve upon that paper’s research by normalizing all the results by the population race density.
 
 ## Research Questions
 
 [1]
-- 
+
+- What is the connection between racial bias in police stops and in police killings and how does the disparity in killings evolve over time?		
+- What's the short-term and long-term impact of protests on police violence?
 
 [2]
+
 - Is it true that the BLM request of defunding the police would decrease the number of police killings of black people?
 - Is there any relation between police/healthcare/education funding and police violence (for all races)?
 - How is police violence spread across the different states and races, if we were to normalize the data depending on the population distribution in every state, and racial distribution within each state?
+
 [3]
+
 - Is there a racial bias in police violence?
     - How can different categories of people's behaviors (carrying a weapon, fleeing the police) impact the number of victims, within each race? Do these numbers show racial bias?
     - How is the people's behavior changing over time, in each race? 
@@ -51,6 +56,12 @@ This is the dataset used by the original paper. It contains data about the diffe
 
 ## Methods
 
+
+- **Police Killings vs Police stops**
+To answer our first research question we decided to compare the disparities against the different races in each problem. Specifically we explored how are the disparities distributed across all states we had data for for each race and metric (killings and stops) and how the disparities evolve over time on each specific state for each race. It's worth noting that although for killings we had data for all 50 states, for police stops we only had data for 8 of them so we focused our first analysis on this subset whereas the second one which is independent of stops was performed over all states. To calculate the disparity, we first calculated the percentage of each race per state, normalized the number of killings per race per state by these demographics and then took the difference between percentage of population and percentage of victims per race.		
+
+- **Effect of protests**		The first step we took for answering the second research question was to compile a list of major Black Lives Matter protests and plot the timeseries of police victims per race before and after these events. For the short-term effect we calculated the average number of victims in the 5 weeks leading to and following the protests and compared them. For the long-term effect, we fitted a regression line in the timeseries to represent their trends and compared their slopes.
+
 - **Government funding**
 The data we have available is separated in different files for every year as well as every economic sector. We have merged theses separate files into one dataset containing government funding ***per capita***  for every state, in the 3 sectors we are interested in. It is important to note that we are only interested in the per capita spending (meaning how much money does the state invest for every resident for Police/ Healthcare/ Education. This i crucial because we want to compare states with one another, and there are states with huge populations and huge budgets, that we want to compare with smaller states.
 
@@ -84,13 +95,8 @@ The last week will be dedicated to proof-check what each one of us has completed
 
 ## Organization within the team
 
-- **Part [1]** **George** Finding interesting statistical insights on data related to police killings.
-- **Part [2]** **Gerald** Correlation between government spendings and killings per race.
-- **Part [3]: **Faten** Improving upon the study of the paper by including a normalization factor for the racial distribution per state.
-
-## Questions for TAs
-- We are thinking of including in our project a prediction model based on data related to racial disparity, but we are unsure on what to predict. If you have any idea or advice on this, we would appreciate it. 
-- Are the research questions we are currently presenting enough to serve as an interesting extinction to the study?
-
+- **Question [1]** **George** Disparity exploration and impact of protests
+- **Question [2]** **Gerald** Correlation between government spendings and killings per race.
+- **Question [3]:** **Faten** Exploring police violence
 
 
