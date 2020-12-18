@@ -9,7 +9,8 @@ Racial inequalities and discrimination against minorities has been a prominent i
 
 ## Research Questions
 
-
+- What is the connection between racial bias in police stops and in police killings and how does the disparity in killings evolve over time?
+- What's the short-term and long-term impact of protests on police violence?
 - Is it true that the BLM request of defunding the police would decrease the number of police killings of black people?
 - Is there any relation between police/healthcare/education funding and police violence (for all races)?
 - How is police violence spread across the different states and races, if we were to normalize the data depending on the population distribution in every state, and racial distribution within each state?
@@ -40,10 +41,16 @@ This is the dataset used by the original paper. It contains data about the diffe
 
 ## Methods
 
+- **Police Killings vs Police stops**
+To answer our first research question we decided to compare the disparities against the different races in each problem. Specifically we explored how are the disparities distributed across all states we had data for for each race and metric (killings and stops) and how the disparities evolve over time on each specific state for each race. It's worth noting that although for killings we had data for all 50 states, for police stops we only had data for 8 of them so we focused our first analysis on this subset whereas the second one which is independent of stops was performed over all states. To calculate the disparity, we first calculated the percentage of each race per state, normalized the number of killings per race per state by these demographics and then took the difference between percentage of population and percentage of victims per race.
+
+- **Effect of protests**
+The first step we took for answering the second research question was to compile a list of major Black Lives Matter protests and plot the timeseries of police victims per race before and after these events. For the short-term effect we calculated the average number of victims in the 5 weeks leading to and following the protests and compared them. For the long-term effect, we fitted a regression line in the timeseries to represent their trends and compared their slopes.
+
 - **Government funding**
 The data we have available is separated in different files for every year as well as every economic sector. We have merged theses separate files into one dataset containing government funding ***per capita***  for every state, in the 3 sectors we are interested in. It is important to note that we are only interested in the per capita spending (meaning how much money does the state invest for every resident for Police/ Healthcare/ Education. This i crucial because we want to compare states with one another, and there are states with huge populations and huge budgets, that we want to compare with smaller states.
 
-- **Police Killings**
+- **Police Killings normalization**
 We have available a dataset containing information about every murder caused by the police. We will use information about the state the murder happened in, as well as the race of the victim. By grouping by state, we will have a total count of police murders in every location, together with the number of murders per race. 
 However this is not sufficient for what we are looking for. We need a fair way of comparing states with massive amount of populations, with smaller states. Also we want to be able to be able to compare the number of killings of each race equally. What we mean by that is that we want to be able to compare murders states with 70% black populations, to states with 10% black population. It is true that the first state will probably have many more murders in raw numbers for the black community, but that is probably due to the fact that there are many more black residents there. 
 So ultimately, what we would like to end up with is a dataset containing number of deaths if every state had the same population, and every state had 33% white, 33% black and 33% hispanic population. The way we intend to achieve this is by doing the following:
