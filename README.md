@@ -1,6 +1,8 @@
 
 # Racial Disparities in the US
 
+## Datastory: https://racial-disparity-usa.ml
+
 ## Abstract
 
 Racial inequalities and discrimination against minorities has been a prominent issue throughout US history but in recent years its importance has risen to unprecedented heights. Specifically, after the murders of George Floyd and Breonna Taylor, the discussion on if police acts more violently against minorities and especially black minorities, compared to white people has been on the forefront of American politics and that’s why we decided to take a data driven approach to this issue and the black lives matter movement. We intend on investigating whether the claims of the black community are supported by official statistics and if their demands will indeed have an impact and reduce police brutality. This is connected to the original paper on the basis of examining a different case of police racial bias against minorities and we aim to improve upon that paper’s research by normalizing all the results by the population race density.
