@@ -1,20 +1,22 @@
-#<center>Milestone P3</center>
 
-#<center>*Racial Disparities in the US*</center>
+# Racial Disparities in the US
 
-##Abstract
+## Datastory: https://racial-disparity-usa.ml
+
+## Abstract
 
 Racial inequalities and discrimination against minorities has been a prominent issue throughout US history but in recent years its importance has risen to unprecedented heights. Specifically, after the murders of George Floyd and Breonna Taylor, the discussion on if police acts more violently against minorities and especially black minorities, compared to white people has been on the forefront of American politics and that’s why we decided to take a data driven approach to this issue and the black lives matter movement. We intend on investigating whether the claims of the black community are supported by official statistics and if their demands will indeed have an impact and reduce police brutality. This is connected to the original paper on the basis of examining a different case of police racial bias against minorities and we aim to improve upon that paper’s research by normalizing all the results by the population race density.
 
-##Research Questions
-- What's the validity of the original paper's results if they are normalized by population race density per state?
-
-- Is there any correlation between the money spending per state on education, healthcare and police VS police killings per race?
-
-- What insights and conclusions can we draw from exploring data regarding police killing in the US?
+## Research Questions
 
 
-##Proposed datasets
+- Is it true that the BLM request of defunding the police would decrease the number of police killings of black people?
+- Is there any relation between police/healthcare/education funding and police violence (for all races)?
+- How is police violence spread across the different states and races, if we were to normalize the data depending on the population distribution in every state, and racial distribution within each state?
+
+
+
+## Proposed datasets
 
 - [US Government spending](https://www.usgovernmentspending.com/compare_state_spending_2020d50a)
  
@@ -28,17 +30,31 @@ This is a very comprehensive dataset provided by the Mapping Police Violence org
 
 The Giffords is a non-profit advocacy and research organization focused on promoting gun control. Each year, they gather data about gun-related incidents and analyze them to show the trend of violence in each state. Besides, the attorneys in Giffords organization track and analyze gun legislation in all 50 states, assigning laws and policies point values. States gain points for strong gun laws and lose points for laws that make their residents less safe. These points are tabulated and the states are ranked and then assigned letter grades. These grades are compared to the most recent gun death rates released by the CDC (Centers for Disease Control and Prevention). 
 
+- [Racial distribution per State](https://www.governing.com/gov-data/census/state-minority-population-data-estimates.html/)
+The data here is very straightforward. We have on each row information about the racial distribution of every state in the US. There are many races covered in the dataset, but we are only interested in White, Black and Hispanic
+
 
 - [Original paper data](https://openpolicing.stanford.edu/data/)
 
 This is the dataset used by the original paper. It contains data about the different stops and information about the drivers. The data is available as separate csv files per many different counties, so we will need to merge them manually, and make sure that we deal with missing data.
 
-##Methods
+## Methods
 
-- **Data collection:** Scraping gun laws data from the Giffords organization website.
-- **Data preprocessing:** Merging the gun laws dataset with the Police Violence one to use the state’s ranking as a feature.
+- **Government funding**
+The data we have available is separated in different files for every year as well as every economic sector. We have merged theses separate files into one dataset containing government funding ***per capita***  for every state, in the 3 sectors we are interested in. It is important to note that we are only interested in the per capita spending (meaning how much money does the state invest for every resident for Police/ Healthcare/ Education. This i crucial because we want to compare states with one another, and there are states with huge populations and huge budgets, that we want to compare with smaller states.
 
-##Proposed timeline
+- **Police Killings**
+We have available a dataset containing information about every murder caused by the police. We will use information about the state the murder happened in, as well as the race of the victim. By grouping by state, we will have a total count of police murders in every location, together with the number of murders per race. 
+However this is not sufficient for what we are looking for. We need a fair way of comparing states with massive amount of populations, with smaller states. Also we want to be able to be able to compare the number of killings of each race equally. What we mean by that is that we want to be able to compare murders states with 70% black populations, to states with 10% black population. It is true that the first state will probably have many more murders in raw numbers for the black community, but that is probably due to the fact that there are many more black residents there. 
+So ultimately, what we would like to end up with is a dataset containing number of deaths if every state had the same population, and every state had 33% white, 33% black and 33% hispanic population. The way we intend to achieve this is by doing the following:
+
+	- First we collect data on what is the percentage of population in each state compared to the total US population. We then use these fractions, and multiply the dataset of police killings with the corresponding value depending on the state
+	- Next, using a dataset that specifies the racial distribution per each state, we want to normalize the number of killings of every state, by the fraction of racial distribution on each state. 
+	
+- **Viewing relation of government funding to police killings**
+	In order to view if there is a relationship between the government funding, and the number of deaths caused by the police, we will merge the two datasets we prepared (described above), and show them together on the same plot. We use the name of the state on the common axis, and plot the data as bar plots (the number of killings will be stacked so it contains killings per race). Then by sorting  the data on funding/killings we will discuss what conclusions we can draw for the data. 
+
+## Proposed timeline
 - **1st week:** 
 We will each work individually on the new replication task.
 - **2nd week:**
@@ -47,12 +63,12 @@ We will split the workload evenly in the team so that each team member has one r
 The last week will be dedicated to proof-check what each one of us has completed in the previous week, improve on that and merge our works in one place. After this is done, the remaining amount of time will be dedicated to creating the data story. 
 
 
-##Organization within the team
-- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Feten**
+## Organization within the team
+- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Faten**
 - **Second question** (correlation between government spendings and killings per race): **Gerald**
 - **Third question** (finding interesting statistical insights on data related to police killings): **George**
 
-##Questions for TAs
+## Questions for TAs
 - We are thinking of including in our project a prediction model based on data related to racial disparity, but we are unsure on what to predict. If you have any idea or advice on this, we would appreciate it. 
 - Are the research questions we are currently presenting enough to serve as an interesting extinction to the study?
 
