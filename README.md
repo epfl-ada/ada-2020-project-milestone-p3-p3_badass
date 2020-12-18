@@ -9,14 +9,21 @@ Racial inequalities and discrimination against minorities has been a prominent i
 
 ## Research Questions
 
+[1]
+- 
 
+[2]
 - Is it true that the BLM request of defunding the police would decrease the number of police killings of black people?
 - Is there any relation between police/healthcare/education funding and police violence (for all races)?
 - How is police violence spread across the different states and races, if we were to normalize the data depending on the population distribution in every state, and racial distribution within each state?
-- Is there racial bias in police violence? 
-- How can different categories of people's behaviors (carrying a weapon, fleeing the police) impact the number of victims, within each race? Do these numbers show racial bias?
-- How is the people's behavior changing over time, in each race? 
-- Is there a racial bias in police getting charged for murder? How is this evolving in time? 
+[3]
+- Is there a racial bias in police violence?
+    - How can different categories of people's behaviors (carrying a weapon, fleeing the police) impact the number of victims, within each race? Do these numbers show racial bias?
+    - How is the people's behavior changing over time, in each race? 
+    - Is there a racial bias in police getting charged for murder? How is this evolving in time?
+- Is the system of states' ranking based on gun laws strength valid?
+    - Is there a correlation between the gun laws strength and the victim's possessing of a gun?
+    - How the number of victims carrying a gun changes over time in states with the strongest and weakest gun laws?
 
 
 
@@ -58,6 +65,14 @@ So ultimately, what we would like to end up with is a dataset containing number 
 - **Viewing relation of government funding to police killings**
 	In order to view if there is a relationship between the government funding, and the number of deaths caused by the police, we will merge the two datasets we prepared (described above), and show them together on the same plot. We use the name of the state on the common axis, and plot the data as bar plots (the number of killings will be stacked so it contains killings per race). Then by sorting  the data on funding/killings we will discuss what conclusions we can draw for the data. 
 
+
+- **Racial bias**
+We are interested in features related to victim's race and behavior (victim carrying a weapon, victim fleeing the police), the one related to criminal charges inorder to inspect any potential racial bias, and then time. 
+We normalize the data in each race to make the comparisons more correct. We look at data aggregated on the total number of victims and then study each feature more in depth by inspecting its trend over time. We finally try to generalize our remarks by making linear regressions to see how the victims' behaviors are changing within each race.
+
+- **Gun laws**
+We compute the portion of victims carrying a gun in each state, then in each category of states based on the strength of their gun laws.
+
 ## Proposed timeline
 - **1st week:** 
 We will each work individually on the new replication task.
@@ -68,9 +83,10 @@ The last week will be dedicated to proof-check what each one of us has completed
 
 
 ## Organization within the team
-- **First question** (improving upon the study of the paper by including a normalization factor for the racial distribution per state): **Faten**
-- **Second question** (correlation between government spendings and killings per race): **Gerald**
-- **Third question** (finding interesting statistical insights on data related to police killings): **George**
+
+- **Part [1]** **George** Finding interesting statistical insights on data related to police killings.
+- **Part [2]** **Gerald** Correlation between government spendings and killings per race.
+- **Part [3]: **Faten** Improving upon the study of the paper by including a normalization factor for the racial distribution per state.
 
 ## Questions for TAs
 - We are thinking of including in our project a prediction model based on data related to racial disparity, but we are unsure on what to predict. If you have any idea or advice on this, we would appreciate it. 
