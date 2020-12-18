@@ -13,6 +13,10 @@ Racial inequalities and discrimination against minorities has been a prominent i
 - Is it true that the BLM request of defunding the police would decrease the number of police killings of black people?
 - Is there any relation between police/healthcare/education funding and police violence (for all races)?
 - How is police violence spread across the different states and races, if we were to normalize the data depending on the population distribution in every state, and racial distribution within each state?
+- Is there racial bias in police violence? 
+- How can different categories of people's behaviors (carrying a weapon, fleeing the police) impact the number of victims, within each race? Do these numbers show racial bias?
+- How is the people's behavior changing over time, in each race? 
+- Is there a racial bias in police getting charged for murder? How is this evolving in time? 
 
 
 
